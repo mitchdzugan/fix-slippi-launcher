@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+dirname=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+rm -rf ~/.config/Slippi\ Launcher/playback/*.AppImage
+rm -rf ~/.config/Slippi\ Launcher/playback/*.AppImage.zsync
+rm -rf ~/.config/Slippi\ Launcher/netplay/*.AppImage
+rm -rf ~/.config/Slippi\ Launcher/netplay/*.AppImage.zsync
+
+cp $dirname/playback_dolphin-emu ~/.config/Slippi\ Launcher/playback/
+cp $dirname/netplay_dolphin-emu ~/.config/Slippi\ Launcher/netplay/
